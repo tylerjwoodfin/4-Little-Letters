@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#212121">
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainText"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="L"
+        android:id="@+id/letter1"
+        android:layout_below="@+id/MainText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="171dp"
+        android:width="80dp"
+        android:textSize="80dp"
+        android:fontFamily="mono"
+        android:focusable="true"
+        android:textColorHighlight="#FF3F80"
+        android:textColor="#FFFFFF"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="L"
+        android:id="@+id/letter2"
+        android:width="80dp"
+        android:textSize="80dp"
+        android:fontFamily="mono"
+        android:layout_alignBottom="@+id/letter1"
+        android:layout_toEndOf="@+id/letter1"
+        android:focusable="true"
+        android:textColorHighlight="#FF3F80"
+        android:textColor="#FFFFFF"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="L"
+        android:id="@+id/letter3"
+        android:width="80dp"
+        android:textSize="80dp"
+        android:fontFamily="mono"
+        android:layout_alignBottom="@+id/letter2"
+        android:layout_toEndOf="@+id/letter2"
+        android:focusable="true"
+        android:textColorHighlight="#FF3F80"
+        android:textColor="#FFFFFF"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="L"
+        android:id="@+id/letter4"
+        android:width="80dp"
+        android:textSize="80dp"
+        android:fontFamily="mono"
+        android:layout_alignBottom="@+id/letter3"
+        android:layout_toEndOf="@+id/letter3"
+        android:focusable="true"
+        android:textColorHighlight="#FF3F80"
+        android:textColor="#FFFFFF"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+</RelativeLayout>
