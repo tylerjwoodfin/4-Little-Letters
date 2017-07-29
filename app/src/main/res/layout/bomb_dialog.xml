@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="113dp"
+        android:layout_toEndOf="@+id/image"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="32dp"
+        android:typeface="monospace"
+        tools:text="This is example text." />/>
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="BOMB!"
+        android:layout_alignBottom="@+id/button_cancel"
+        android:layout_toEndOf="@+id/image"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="135dp"
+        android:text="Oops"
+        android:layout_below="@+id/text"
+        android:layout_alignStart="@+id/dialogButtonOK" />
+
+</RelativeLayout>
